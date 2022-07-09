@@ -87,8 +87,8 @@ div.texto{
 }
 
 
-/* animacion del texto e imagenes que aparece */
-.animado {
+/* animacion del texto e imagenes que aparece de derecha a izquierda*/
+.animadoDer {
   opacity: 0;
   transition: all 0.5s;
 }
@@ -105,6 +105,45 @@ div.texto{
     transform: translateX(0);
   }
 }
+
+/* animacion del texto e imagenes que aparece de izquierda a derecha */
+.animadoIzq {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.mostrarIzq{
+  animation:  mostrarIzq 2s;
+}
+
+@keyframes mostrarIzq{
+  0%{
+    transform: translateX(-60px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+/* animacion del texto e imagenes que aparece de arriba a abajo  */
+.animadoUp {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.mostrarUp{
+  animation:  mostrarUp 2s;
+}
+
+@keyframes mostrarUp{
+  0%{
+    transform: translateY(-60px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
 
 /* animacion que hace a las imagenes sacudirse */
 
